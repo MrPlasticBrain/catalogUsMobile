@@ -1,0 +1,27 @@
+.product-header{
+    text-align: center;
+    background: rgba(63, 81, 181, 0.29);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 8px;
+    font-weight: bold;
+}
+.product-ul li{
+    list-style-type: none;
+    background: #ccc;
+    margin: 5px;
+    font-family: cursive;
+    width: 46%;
+    float: left;
+}
+.productHolder span{
+    display: block;
+}
+.product-ul{
+    padding: 0px;
+    margin: 0px;
+}
+.img_prod_holder img{
+        width: 100%;
+}

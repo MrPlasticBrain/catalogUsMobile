@@ -1,0 +1,168 @@
+.leftMenuUl {
+/*background: #3f51b5;*/
+background: #2E363F;
+    color: rgb(64, 196, 255);
+    position: absolute;
+    top: 35px;
+    left: -310px;
+    width: 20%;
+    min-width: 250px;
+    z-index: 9999;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding-top: 0px;
+    margin-left: -32px;
+    /* padding-bottom: 14px; */
+    opacity: 0.95;
+}
+ 
+ul {
+  font-size: 18px;
+  line-height: 2.5;
+  font-weight: 400;
+  padding-top: 50px;
+  list-style: none;
+}
+
+/*menu button*/
+.toggleLine {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: 0;
+}
+ 
+ 
+.toggleLine span {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: #1a2580;
+}
+ 
+.toggleLine span::before,
+.toggleLine span::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #1a2580;
+  content: "";
+}
+ 
+.toggleLine span::before {
+  top: -20px;
+}
+ 
+.toggleLine span::after {
+  bottom: -20px;
+}
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(64, 196, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.out .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px) ;
+    transform: rotate(-45deg) translate(-8px, 6px) ;
+}
+
+.out .bar2 {opacity: 0;}
+
+.out .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px) ;
+    transform: rotate(45deg) translate(-9px, -8px) ;
+}
+.in_animate{transition: 450ms;
+    left: -330px;}
+.out_animate{transition: 450ms;
+    left: 0;    position: fixed;}
+
+    .in_animate_store{transition: 450ms;
+    left: -330px;}
+.out_animate_store{transition: 450ms;
+    left: 0;    position: fixed;}
+.menu-desc{font-size: 9px;}
+.leftMenuUl a{
+      text-decoration: none;
+    color: white;
+}
+.leftMenuUl li{
+      border-bottom: 1px solid rgba(21, 225, 234, 0.52);
+    width: 96%;
+}
+.container.out,.container.in{
+/*position: fixed; */
+    /* z-index: 99999; */
+    /* top: 0px; */
+    /* background: #2E363F; */
+    padding: 10px 10px 7px 10px;
+    /* left: -1px; */
+    /* width: 35px; */
+    /* opacity: 0.8; */
+        float: left;
+        width: 30px;
+}
+.storeMenu{
+    color: rgb(64, 196, 255);
+    /*left: 54px!important;
+    color: rgb(64, 196, 255);
+    padding-bottom: 0px!important;*/
+    
+
+}
+.storeMenu i{
+  font-size: 27px!important;
+}
+
+.out.storeMenu{
+    color: #04ffdc!important;
+}
+.out .bar1,.out  .bar2,.out  .bar3{
+    background-color: #04ffdc!important;
+}
+.each_menu .menu-name{
+    font-size: 14px;
+    margin-left: 8px;
+    color: #04ffdc;
+}
+.storeMenuHolder p{
+    margin: -3px 0px 0px -1px;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+/*.hanburger-menu,.storeMenu{
+    min-height: 40px;
+}*/
+.header_menu_holder{
+    position: fixed;
+    background: #272833;
+    top: 0px;
+    z-index: 12;
+    opacity: 0.8;
+    height: 53px!important;
+width: 100%;
+}

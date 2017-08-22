@@ -1,0 +1,28 @@
+{
+    "name": "mrplasticbrain.catalogus.news",
+    "displayName": "Catalog us_10032",
+    "version": "1.0.0.32",
+    "description": "catalog description.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Aleksandar Milanov @MrPlasticBrain",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-browser": "^4.1.0",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "onesignal-cordova-plugin": "^2.1.2"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "onesignal-cordova-plugin": {}
+        },
+        "platforms": [
+            "android",
+            "browser"
+        ]
+    }
+}

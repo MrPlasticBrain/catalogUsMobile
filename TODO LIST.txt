@@ -1,0 +1,21 @@
+
+
+
+
+
+
+MOBILE
+1. novo meni so events posebno API da se naprava(nova komponenta)
+-mobile view (MOBILE)
+-api get da se naprava (WEB API)
+2. promocii na front page (vo app pomnonent nova komponenta da se naprav)
+-componenta nova promotions (MOBILE)
+-API call Get promotions (MOBILE in component)
+-API create get promotions (WEB API)
+
+
+WEB
+1. da se napravi landing page (template zemen)
+
+ADMIN
+1. SE template zemen

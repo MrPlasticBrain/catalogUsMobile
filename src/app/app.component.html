@@ -1,0 +1,46 @@
+ <!--<span class="logo"></span>
+<md-toolbar color="primary">
+  <app-left-menu [catalogFeed]="catalogFeed" [storeFeed]="storeFeed"></app-left-menu>
+
+  <span class="center"></span>
+ 
+</md-toolbar>-->
+
+<div class="menu_holder_new">
+  <app-left-menu [catalogFeed]="catalogFeed" [storeFeed]="storeFeed"></app-left-menu>
+  <span class="logo"></span>
+
+</div>
+  <div class="btn-group">
+    <!--<app-pool-to-refresh (onPull)="onPull()" [refresh]="isInProgress"></app-pool-to-refresh>-->
+             <button class="btn btn-default homeTittle">
+      {{ tittle | translate}}
+     </button>
+    
+
+    <button *ngFor="let lang of supportedLanguages"
+      (click)="selectLang(lang.value)"
+      class="btn btn-default" [class.btn-primary]="isCurrentLang(lang.value)">
+      {{ lang.display }}
+    </button>
+  </div>
+
+<app-promotions-card></app-promotions-card>
+<router-outlet></router-outlet>
+<ng-container *ngIf="routeData['showContent'] == 'home'">
+  <div class="app-feed-class">
+    <header>
+      <div class="mainHeader_wrapper">
+        <div class="mainHeader_menu">
+          <nav>
+            <a [routerLink]="['/category',pm.value]" *ngFor="let pm of promoMenu">{{pm.display}}</a> 
+          </nav>
+        </div>
+        <div class="mainHeader_tittle"></div>
+      </div>
+    </header>
+    <app-feed-card *ngFor="let feed of feeds" [feed]="feed"></app-feed-card>
+  </div>
+</ng-container>
+  
+<app-spinner *ngIf="!feeds.length"></app-spinner>

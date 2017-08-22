@@ -1,0 +1,51 @@
+<!doctype html>
+<html style="height: 100%;">
+<head>
+  <meta charset="utf-8">
+  <title>Catalog US</title>
+  <base href="/">
+
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; connect-src 'self' https://rss2json.com https://api.rss2json.com ws://localhost:4200">-->
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * filesystem: data:">-->
+  <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'; media-src *;connect-src 'self' https://rss2json.com https://api.rss2json.com ws://localhost:4200 http://brainwpdev1.co.nf/ ; img-src * filesystem: data:">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <!--<link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/favicon/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">-->
+  <!--<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>-->
+  <style>
+.loader {
+    
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    margin: 40% auto;
+    top: 30%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+body{    background: none repeat scroll 0 0 #eeeeee;}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body style="margin: 0; height: 100%;">
+  
+  <app-root><div class="loader"></div></app-root>
+  <!--<div class="loader"></div> -->
+</body>
+</html>

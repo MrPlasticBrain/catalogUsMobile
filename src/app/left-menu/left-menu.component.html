@@ -1,0 +1,54 @@
+<div class="header_menu_holder">
+  <div class="container hanburger-menu" [ngClass]="(menuState)" (click)="toggleMenu('cat')">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <div class="container storeMenu" [ngClass]="(menuStateStore)" (click)="toggleMenu('store')">
+    <div class="storeMenuHolder"><i class="material-icons">store_mall_directory</i>
+      <p>{{ 'StoreTittle' | translate }}</p>
+    </div>
+  </div>
+
+</div>
+<ul [ngClass]="(menuState)+'_animate'" class="leftMenuUl">
+  <li routerLinkActive="active">
+    <div class="menu_name_holder">
+      <span class="menu-name">{{categoryTitle}}</span>
+      <span class="menu-desc"></span>
+    </div>
+  </li>
+  <li routerLinkActive="active">
+    <a [routerLink]="['/']" (click)="toggleMenu('no')">
+      <div class="menu_name_holder each_menu">
+        <span class="menu-name">{{homeLinkData.name}}</span>
+        <span class="menu-desc">{{homeLinkData.description}}</span>
+      </div>
+    </a>
+  </li>
+  <li *ngFor="let feed of feeds" routerLinkActive="active">
+    <a [routerLink]="['/category',feed.id]" (click)="toggleMenu('no')">
+      <div class="menu_name_holder each_menu">
+        <span class="menu-name">{{feed.name}}</span>
+        <span class="menu-desc">{{feed.description}}</span>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<ul [ngClass]="(menuStateStore)+'_animate_store'" class="leftMenuUl">
+  <li routerLinkActive="active">
+    <div class="menu_name_holder">
+      <span class="menu-name">{{storeTitle}}</span>
+      <span class="menu-desc"></span>
+    </div>
+  </li>
+  <li *ngFor="let storeFeed of storeFeeds" routerLinkActive="active">
+    <a [routerLink]="['/category',storeFeed.id]" (click)="toggleMenu('store')">
+      <div class="menu_name_holder each_menu">
+        <span class="menu-name">{{storeFeed.name}}</span>
+        <span class="menu-desc">{{storeFeed.description}}</span>
+      </div>
+    </a>
+  </li>
+</ul>

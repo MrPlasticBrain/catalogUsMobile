@@ -1,0 +1,26 @@
+<div class="product-header">
+    <span>product catalog header</span>
+    <div>{{nodata}}</div>
+</div>
+<ul class="product-ul">
+  <li *ngFor="let feed of productModelData">
+    <!--<div class="productHolder">
+      
+          <span>id: {{feed.id}}</span>
+          <span>name: {{feed.name}}</span>
+          <span>description: {{feed.description}}</span>
+          <span>price: {{feed.price}}</span>
+          <span>category_id: {{feed.category_id}}</span>
+          <span>category_name: {{feed.category_nameid}}</span>
+    </div>-->
+    <md-card class="card-feed-entry">
+      <md-card-title>{{feed.name}}</md-card-title>
+      <md-card-subtitle>{{feed.price}}</md-card-subtitle>
+      <md-card-content>{{feed.description | stripHtmlTags}}</md-card-content>
+          <div class="img_prod_holder">
+               <img class="md-user-avatar" src="{{feed.image_url}}">
+          </div>
+    </md-card>
+  </li>
+</ul>
+<app-spinner *ngIf="!productModelData"></app-spinner>
