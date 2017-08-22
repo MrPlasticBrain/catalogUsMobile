@@ -1,4 +1,4 @@
-# BeCompany news reader
+# catalog Us pro
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.11-webpack.9-4.
 
